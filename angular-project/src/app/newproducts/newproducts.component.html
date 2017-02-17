@@ -1,0 +1,50 @@
+	<section class="products">
+		<div class="shoe-rows">
+			<div class="popular-row">
+				<hr class="hrleft">
+
+				<a href><h2>POPULAR PRODUCTS</h2></a>
+
+				<hr class="hrright">
+			</div>
+
+			<div class="shoe-row1">
+				<div class="shoe1" *ngFor="let shoe of shoes">
+					<div class="star-and-shoe">
+						<div class="star-icon">
+							<a href=""><img src="../../images/star.png"></a>
+							<a href=""><img src="../../images/star.png"></a>
+							<a href=""><img src="../../images/star.png"></a>
+							<a href=""><img src="../../images/star.png"></a>
+							<a href=""><img src="../../images/star.png"></a>
+						</div>
+
+						<div class="pic-box">
+							<img [src]="shoe.image[0]">
+						</div>
+					</div>
+
+					<div class="text-box">
+						<a [routerLink]="['/shoe', shoe.id]" title=""><h3>{{shoe.name}}</h3></a>
+						<h4>{{shoe.type}}</h4>
+						<p>{{shoe.description}}</p>
+
+						<hr class="box-hr">
+						
+						<div class="price-and-icons">
+							<div class="price">
+								<p><font size="2px"><font color="#f45a40">$ 86.99</font></font></p>
+							</div>
+							
+							<div class="icons">
+								<a href=""><img src="../../images/heart.png"></a>
+								<a href=""><img src="../../images/plus.png"></a>
+							</div>
+						</div>
+					</div>
+
+					<a href><button class="buynow">BUY NOW</button></a>
+				</div>
+			</div>
+		</div>
+	</section>

@@ -1,0 +1,97 @@
+.contactform {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 400px;
+	padding-bottom: 100px;
+}
+
+.theform {
+	display: flex;
+	width: 85%;
+	flex-flow: column;
+}
+
+.box {
+	display: flex;
+	flex-flow: column wrap;
+	width: 39%;
+}
+
+.box h1 {
+	color: gray;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 27px;
+	margin-top: 50px;
+}
+
+.contactname input[type=text] {
+	width: 335px;
+	height: 30px;
+	border: 1px solid gray;
+}
+
+.contactname {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	color: gray;
+	font-family: Arial;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.contactemail input[type=text] {
+	width: 335px;
+	height: 30px;
+	border: 1px solid gray;
+}
+
+.contactemail {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	color: gray;
+	font-family: Arial;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.message input[type=text] {
+	display: flex;
+	padding-bottom: 100px;
+	border: 1px solid gray;
+	margin-top: 5px;
+	padding-top: 10px;
+}
+
+.message {
+	display: flex;
+	flex-flow: column;
+	color: gray;
+	font-family: Arial;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.theform button {
+	font-size: 13px;
+	font-family: Arial;
+	color: white;
+	height: 35px;
+	width: 140px;
+	text-align: center;
+	border: none;
+	background-color: #f45a40;
+	cursor: pointer;
+}
+
+.submittext {
+	font-family: Arial;
+	color: gray;
+}
